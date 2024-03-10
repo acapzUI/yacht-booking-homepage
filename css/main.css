@@ -1,6 +1,6 @@
 
 .yacht-main {
-  margin-top: 120px;
+  margin-top: 90px;
   background-image: url("../images/visual_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -9,20 +9,18 @@
 .yacht-main .inner {
   height: 646px;
 }
-
 .yacht-main .inner .yacht-pic {
   position: absolute;
+  z-index: auto;
   top: 100px;
-  right: -400px;
+  left: 100px;
 }
-
 .yacht-main .inner .text-group .yacht-describe {
   position: absolute;
   width: 50%;
   top: 100px;
   left: 0;
 }
-
 .yacht-main .inner .btn {
   position: absolute;
   top: 350px;
@@ -115,18 +113,7 @@
 .notice .notice-line .inner__right .toggle-promotion .material-icons {
   font-size: 30px;
 }
-/*PROMOTION*/
-.notice .promotion {
-  /*width: auto;*/
-  height: 693px;
-  background-color: #f6f5ef;
-  position: relative;
-  overflow: hidden;
-  transition: height .4s;
-}
-.notice .promotion.hide {
-  height: 0;
-}
+
 .notice .promotion .swiper-container {
   /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
   width: calc(819px * 3 + 20px);
@@ -140,6 +127,25 @@
   position: relative;
   opacity: .5;
   transition: opacity 1s;
+  overflow: hidden;
+}
+.notice.promotion.swiper-slide.swiper-youtube-area {
+  width: 819px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  /* 9비율 */
+  top: 50%;
+  margin-top: calc(1920px * 9 / 16 / -2);
+}
+.notice.promotion.swiper-slide.swiper-youtube-area::before {
+  content: "";
+  display: block;
+  /* 16:9 영상 비율로 요소 크기 만들기! */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
 }
 .notice .promotion .swiper-slide-active {
   opacity: 1;
@@ -203,6 +209,8 @@
   background-color: #333;
   color: #fff;
 }
+
+
 
 
 /*REWARDS*/
@@ -294,225 +302,34 @@
 .youtube .inner {
   height: inherit;
 }
-.youtube .floating1 {
+.youtube .inner .img-hover-title {
+  top: 30%;
+  width: 60%;
   position: absolute;
-  top: 50px;
-  left: 0;
 }
-.youtube .floating2 {
+.youtube .inner .img-hover-describe {
+  top: 62%;
+  width: 40%;
+  left: 2%;
   position: absolute;
-  top: 350px;
-  left: 150px;
 }
 
-
-/*SEASON PRODUCT*/
-.season-product {
-  background-image: url("../images/season_product_bg.jpg");
-}
-.season-product .inner {
-  height: 400px;
-}
-.season-product .floating3 {
-  position: absolute;
-  top: -200px;
-  right: 0;
-}
-.season-product .text-group {
-  position: absolute;
-  top: 110px;
-  right: 100px;
-}
-.season-product .text-group .title {
-  margin-bottom: 10px;
-}
-.season-product .text-group .description {
-  margin-bottom: 15px;
-}
-
-
-/*RESERVE COFFEE*/
-.reserve-coffee {
-  background-image: url("../images/reserve_bg.jpg");
-}
-.reserve-coffee .inner {
-  height: 400px;
-}
-.reserve-coffee .reserve-logo {
-  position: absolute;
-  top: 110px;
-  left: 0;
-}
-.reserve-coffee .text-group {
-  position: absolute;
-  top: 124px;
-  left: 208px;
-}
-.reserve-coffee .product {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-
-/*PICK YOUR FAVORITE*/
-.pick-your-favorite {
-  background-image: url("../images/favorite_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.pick-your-favorite .inner {
-  padding: 110px 0;
-}
-.pick-your-favorite .text-group {
-  width: 362px;
-  margin-left: 100px;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-.pick-your-favorite .text-group .title {
-  margin-bottom: 40px;
-}
-.pick-your-favorite .text-group .description {
-  margin-bottom: 40px;
-}
-
-
-/*RESERVE STORE*/
-.reserve-store {
-  background-image: url("../images/reserve_store_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.reserve-store .inner {
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.reserve-store .medal {
-  width: 334px;
-  height: 334px;
-  perspective: 600px;
-}
-.reserve-store .medal .front,
-.reserve-store .medal .back {
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  transition: 1s;
-  backface-visibility: hidden;
-}
-.reserve-store .medal .front {
-  transform: rotateY(0deg);
-}
-.reserve-store .medal:hover .front {
-  transform: rotateY(180deg);
-}
-.reserve-store .medal .back {
-  transform: rotateY(-180deg);
-}
-.reserve-store .medal:hover .back {
-  transform: rotateY(0deg);
-}
-.reserve-store .medal .back .btn {
-  position: absolute;
-  top: 240px;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-
-/*FIND STORE*/
-.find-store {
-  background-image: url("../images/find_store_bg.jpg");
-}
-.find-store .inner {
-  height: 400px;
-}
-.find-store .texture1 {
-  position: absolute;
-  top: 0;
-  left: 400px;
-}
-.find-store .texture2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.find-store .picture {
-  border-radius: 50%;
-  box-shadow: 2px 2px 8px 0 rgba(0,0,0,.5);
-  position: absolute;
-}
-.find-store .picture1 {
-  top: -60px;
-  left: 0;
-}
-.find-store .picture2 {
-  top: 150px;
-  left: 250px;
-}
-.find-store .text-group {
-  position: absolute;
-  top: 120px;
-  left: 550px;
-}
-.find-store .text-group .title {
-  margin-bottom: 20px;
-}
-.find-store .text-group .description {
-  margin-bottom: 20px;
-}
-
-
-/*AWARDS*/
-.awards {
-  background-color: #272727;
-}
-.awards .inner {
-  padding: 40px 0;
-}
-.awards .swiper-container {
+.yacht-swiper {
   width: 100%;
-  height: 40px;
+  height: 100%;
 }
-.awards .swiper-prev,
-.awards .swiper-next {
-  width: 42px;
-  height: 42px;
-  outline: none;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  opacity: .3;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: .4s;
+.yacht-swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  display: relative
 }
-.awards .swiper-prev {
-  left: -100px;
+.yacht-swiper .swiper-slide .slide-img {
+  display: relative;
+  width: 100%;
+  overflow: hidden;
 }
-.awards .swiper-next {
-  right: -100px;
-}
-.awards .swiper-prev:hover,
-.awards .swiper-next:hover {
-  background-color: #fff;
-  color: #333;
-}
+
+
 
 
 /*SCROLL TO TOP*/

@@ -112,7 +112,7 @@ header {
     border-bottom: 1px solid #c8c8c8;
 }
 header > .inner {
-    height: 120px;
+    height: 90px;
 }
 header .logo {
     height: 75px;
@@ -271,6 +271,7 @@ header .badges .badge {
 }
 
 
+
 /*FOOTER*/
 footer {
     background-color: #272727;
@@ -323,7 +324,7 @@ footer .btn-group .btn:last-child {
     margin-right: 0;
 }
 footer .info {
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
 }
 footer .info span {
