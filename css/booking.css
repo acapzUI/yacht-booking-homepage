@@ -3,11 +3,67 @@
     width: 100%;
 }
 
+
+.body_inline{
+    margin-top: 20px;
+}
+.services {
+    float: left;
+}
+.service {
+    position: relative;
+    --side-padding: 20px;
+    --border-radius: 34px;
+    --aceetn-br: 15;
+    width: 600px;
+    height: 150px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.service img {
+    width:150px;
+    height:150px;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    float: left;
+}
+.service .service_inline {
+    float: left;
+    padding: 10px;
+}
+.service .service_inline h1 {
+    font-size: x-large;
+}
+.service .service_inline h2 {
+    font-size: medium;
+}
+.service button {
+    float: left;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.non-selected {
+    filter: brightness(50%)
+
+}
+
+
 .calendar {
+    filter: brightness(50%);
     --side-padding: 20px;
     --border-radius: 34px;
     --accent-br: 15px;
     width: 400px;
+    margin-left: 10px;
+    float: left;
 }
 .calendar select {
     background-color: #f3f4f6;
@@ -176,4 +232,8 @@ select {
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: calc(100% - var(--side-padding)) center;
+}
+
+.slide_inline {
+    margin-top: 30px;
 }

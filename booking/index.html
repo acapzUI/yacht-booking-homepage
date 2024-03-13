@@ -37,8 +37,12 @@
 
   <link rel="stylesheet" href="../css/common.css" />
   <link rel="stylesheet" href="../css/booking.css" />
+  <link rel="stylesheet" href="../css/rSlider.min.css" />
+
 
   <script defer src="../js/common.js"></script>
+  <script src="../js/rSlider.min.js"></script>
+  <script src="../js/booking.js"></script>
 </head>
 <body>
 
@@ -68,7 +72,6 @@
                     <li>스타벅스 오리가미</li>
                   </ul>
                 </li>
-                <li>
               </ul>
             </div>
             <div class="contents__texture">
@@ -215,87 +218,137 @@
     <h2>예약하실 날짜를 선택해주세요.</h2>
   </div>
 
-  <div class="calendar">
-    <div class="calendar__opts">
-      <select name="calendar__month" id="calendar__month">
-        <option>1월</option>
-        <option>2월</option>
-        <option>3월</option>
-        <option>4월</option>
-        <option selected>5월</option>
-        <option>6월</option>
-        <option>7월</option>
-        <option>8월</option>
-        <option>9월</option>
-        <option>10월</option>
-        <option>11월</option>
-        <option>12월</option>
-      </select>
-  
-      <select name="calendar__year" id="calendar__year">
-        <option>2017</option>
-        <option>2018</option>
-        <option>2019</option>
-        <option selected>2020</option>
-      </select>
-    </div>
-  
-    <div class="calendar__body">
-      <div class="calendar__days">
-        <div>월</div>
-        <div>화</div>
-        <div>수</div>
-        <div>목</div>
-        <div>금</div>
-        <div>토</div>
-        <div>일</div>
+  <div class="body_inline">
+    <div class="services">
+        <div class="service selected">
+            <img src="../images/proposal_square.png"/>
+            <div class="service_inline">
+                <h1>선상 프로포즈</h1>
+                <h2>가격) 1만원~2만원 / 시간</h2>
+                <br>
+                <p>요트에서 낭만적인 선상 프로포즈에 도전하세요</p>
+                <button class="service_btn">select</button>
+            </div>
+        </div><div class="service non-selected">
+            <img src="../images/proposal_square.png"/>
+            <div class="service_inline">
+                <h1>선상 프로포즈</h1>
+                <h2>가격) 1만원~2만원 / 시간</h2>
+                <br>
+                <p>요트에서 낭만적인 선상 프로포즈에 도전하세요</p>
+                <button class="service_btn">select</button>
+            </div>
+        </div>
+        <div class="service non-selected">
+            <img src="../images/proposal_square.png"/>
+            <div class="service_inline">
+                <h1>선상 프로포즈</h1>
+                <h2>가격) 1만원~2만원 / 시간</h2>
+                <br>
+                <p>요트에서 낭만적인 선상 프로포즈에 도전하세요</p>
+                <button class="service_btn">select</button>
+            </div>
+        </div>
+        <div class="service non-selected">
+            <img src="../images/proposal_square.png"/>
+            <div class="service_inline">
+                <h1>선상 프로포즈</h1>
+                <h2>가격) 1만원~2만원 / 시간</h2>
+                <br>
+                <p>요트에서 낭만적인 선상 프로포즈에 도전하세요</p>
+                <button class="service_btn">select</button>
+            </div>
+        </div>
       </div>
-  
-      <div class="calendar__dates">
-        <div class="calendar__date calendar__date--grey"><span>27</span></div>
-        <div class="calendar__date calendar__date--grey"><span>28</span></div>
-        <div class="calendar__date calendar__date--grey"><span>29</span></div>
-        <div class="calendar__date calendar__date--grey"><span>30</span></div>
-        <div class="calendar__date"><span>1</span></div>
-        <div class="calendar__date"><span>2</span></div>
-        <div class="calendar__date"><span>3</span></div>
-        <div class="calendar__date"><span>4</span></div>
-        <div class="calendar__date"><span>5</span></div>
-        <div class="calendar__date"><span>6</span></div>
-        <div class="calendar__date"><span>7</span></div>
-        <div class="calendar__date"><span>8</span></div>
-        <div class="calendar__date"><span>9</span></div>
-        <div class="calendar__date"><span>10</span></div>
-        <div class="calendar__date"><span>11</span></div>
-        <div class="calendar__date"><span>12</span></div>
-        <div class="calendar__date"><span>13</span></div>
-        <div class="calendar__date"><span>14</span></div>
-        <div class="calendar__date"><span>15</span></div>
-        <div class="calendar__date calendar__date--selected calendar__date--first-date calendar__date--range-start"><span>16</span></div>
-        <div class="calendar__date calendar__date--selected calendar__date--last-date"><span>17</span></div>
-        <div class="calendar__date calendar__date--selected calendar__date--first-date"><span>18</span></div>
-        <div class="calendar__date calendar__date--selected"><span>19</span></div>
-        <div class="calendar__date calendar__date--selected"><span>20</span></div>
-        <div class="calendar__date calendar__date--selected calendar__date--last-date calendar__date--range-end"><span>21</span></div>
-        <div class="calendar__date"><span>22</span></div>
-        <div class="calendar__date"><span>23</span></div>
-        <div class="calendar__date"><span>24</span></div>
-        <div class="calendar__date"><span>25</span></div>
-        <div class="calendar__date"><span>26</span></div>
-        <div class="calendar__date"><span>27</span></div>
-        <div class="calendar__date"><span>28</span></div>
-        <div class="calendar__date"><span>29</span></div>
-        <div class="calendar__date"><span>30</span></div>
-        <div class="calendar__date"><span>31</span></div>
+    
+      <div class="calendar">
+        <div class="calendar__opts">
+          <select name="calendar__month" id="calendar__month">
+            <option>1월</option>
+            <option>2월</option>
+            <option>3월</option>
+            <option>4월</option>
+            <option selected>5월</option>
+            <option>6월</option>
+            <option>7월</option>
+            <option>8월</option>
+            <option>9월</option>
+            <option>10월</option>
+            <option>11월</option>
+            <option>12월</option>
+          </select>
+      
+          <select name="calendar__year" id="calendar__year">
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option selected>2020</option>
+          </select>
+        </div>
+      
+        <div class="calendar__body">
+          <div class="calendar__days">
+            <div>월</div>
+            <div>화</div>
+            <div>수</div>
+            <div>목</div>
+            <div>금</div>
+            <div>토</div>
+            <div>일</div>
+          </div>
+      
+          <div class="calendar__dates">
+            <div class="calendar__date calendar__date--grey"><span>27</span></div>
+            <div class="calendar__date calendar__date--grey"><span>28</span></div>
+            <div class="calendar__date calendar__date--grey"><span>29</span></div>
+            <div class="calendar__date calendar__date--grey"><span>30</span></div>
+            <div class="calendar__date"><span>1</span></div>
+            <div class="calendar__date"><span>2</span></div>
+            <div class="calendar__date"><span>3</span></div>
+            <div class="calendar__date"><span>4</span></div>
+            <div class="calendar__date"><span>5</span></div>
+            <div class="calendar__date"><span>6</span></div>
+            <div class="calendar__date"><span>7</span></div>
+            <div class="calendar__date"><span>8</span></div>
+            <div class="calendar__date"><span>9</span></div>
+            <div class="calendar__date"><span>10</span></div>
+            <div class="calendar__date"><span>11</span></div>
+            <div class="calendar__date"><span>12</span></div>
+            <div class="calendar__date"><span>13</span></div>
+            <div class="calendar__date"><span>14</span></div>
+            <div class="calendar__date"><span>15</span></div>
+            <div class="calendar__date calendar__date--selected calendar__date--first-date calendar__date--range-start"><span>16</span></div>
+            <div class="calendar__date calendar__date--selected calendar__date--last-date"><span>17</span></div>
+            <div class="calendar__date calendar__date--selected calendar__date--first-date"><span>18</span></div>
+            <div class="calendar__date calendar__date--selected"><span>19</span></div>
+            <div class="calendar__date calendar__date--selected"><span>20</span></div>
+            <div class="calendar__date calendar__date--selected calendar__date--last-date calendar__date--range-end"><span>21</span></div>
+            <div class="calendar__date"><span>22</span></div>
+            <div class="calendar__date"><span>23</span></div>
+            <div class="calendar__date"><span>24</span></div>
+            <div class="calendar__date"><span>25</span></div>
+            <div class="calendar__date"><span>26</span></div>
+            <div class="calendar__date"><span>27</span></div>
+            <div class="calendar__date"><span>28</span></div>
+            <div class="calendar__date"><span>29</span></div>
+            <div class="calendar__date"><span>30</span></div>
+            <div class="calendar__date"><span>31</span></div>
+          </div>
+        </div>
+
+        <div class="slide_inline">
+            <input type="text" id="slider" class="slider">
+        </div>
+        
+        <div class="calendar__buttons">
+          <button class="calendar__button calendar__button--grey">Back</button>
+      
+          <button class="calendar__button calendar__button--primary">Apply</button>
+        </div>
       </div>
-    </div>
-  
-    <div class="calendar__buttons">
-      <button class="calendar__button calendar__button--grey">Back</button>
-  
-      <button class="calendar__button calendar__button--primary">Apply</button>
-    </div>
+    
   </div>
+  
   
 
   <!--FOOTER-->
