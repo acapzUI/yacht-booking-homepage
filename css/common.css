@@ -122,6 +122,11 @@ header .logo {
     left: 0;
     margin: auto;
 }
+header .title {
+    padding: 10px 20px 34px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+}
 
 header .main-menu {
     position: absolute;
@@ -133,7 +138,7 @@ header .main-menu {
 header .main-menu .item .item__name {
     padding: 10px 20px 34px 20px;
     font-family: Arial, sans-serif;
-    font-size: 13px;
+    font-size: 16px;
 }
 header .main-menu .item:hover .item__name {
     background-color: #2C2A29;

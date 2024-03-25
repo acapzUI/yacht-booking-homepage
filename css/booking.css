@@ -1,8 +1,15 @@
 .top {
+    display: grid;
+    place-items: center;
+    background-color: #eaedf2;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
     margin-top: 90px;
-    width: 100%;
 }
 
+.direction {
+    margin-top: 20px;
+}
 
 .body_inline{
     margin-top: 20px;
@@ -22,7 +29,7 @@
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     background-color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .service img {
     width:150px;
@@ -60,8 +67,8 @@
     --side-padding: 20px;
     --border-radius: 34px;
     --accent-br: 15px;
-    width: 500px;
-    margin-left: 10px;
+    width: 400px;
+    margin-left: 20px;
     float: left;
 }
 .calendar select {
@@ -202,15 +209,7 @@
     transform: translateY(-1px);
 }
 
-body {
-    display: grid;
-    place-items: center;
-    background-color: #eaedf2;
-    height: 100vh;
-    font-family: "Nunito", sans-serif;
-    font-size: 14px;
-    margin: 3vmin;
-}
+
 
 select,
 button {
