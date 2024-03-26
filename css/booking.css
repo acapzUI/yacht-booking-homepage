@@ -1,3 +1,8 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 .top {
     display: grid;
     place-items: center;
@@ -22,8 +27,8 @@
     --side-padding: 20px;
     --border-radius: 34px;
     --aceetn-br: 15;
-    width: 600px;
-    height: 150px;
+    width: 700px;
+    height: 180px;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
@@ -32,8 +37,9 @@
     margin-bottom: 20px;
 }
 .service img {
-    width:150px;
-    height:150px;
+    width:180px;
+    height:180px;
+    object-fit: cover;
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
     float: left;
@@ -44,9 +50,12 @@
 }
 .service .service_inline h1 {
     font-size: x-large;
+    font-weight: bold;
 }
 .service .service_inline h2 {
     font-size: medium;
+    font-weight: bold;
+    color: #ff374b;
 }
 .service button {
     float: left;
@@ -70,6 +79,8 @@
     width: 400px;
     margin-left: 20px;
     float: left;
+    position: sticky;
+    top: 100px;
 }
 .calendar select {
     background-color: #f3f4f6;
@@ -208,6 +219,39 @@
     box-shadow: 0 10px 10px -6px rgba(23, 82, 255, 0.45);
     transform: translateY(-1px);
 }
+
+
+#layer_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#layer_bg:not(.showed) {
+    display: none;
+}
+#layer_bg .showed {
+    display: block;
+}
+#layer_bg .popup {
+    position: absolute;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 7px, 7px, 5px, rgba(0, 0, 0, 0.2);
+}
+#layer_bg .popup button {
+    float: right;
+}
+
 
 
 
