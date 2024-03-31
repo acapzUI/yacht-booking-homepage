@@ -34,13 +34,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
   <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="../css/common.css" />
   <link rel="stylesheet" href="../css/booking.css" />
 
   <script defer src="../js/common.js"></script>
-  <script src="../js/booking.js"></script>
-
 </head>
 <body>
 
@@ -338,7 +337,7 @@
             
             <div class="calendar">
                 <div class="calendar__opts">
-                    <select name="calendar__month" id="calendar__month">
+                    <select name="calendar__month" id="calendar__month" onchange="monthChangedLinstener()">
                         <option>1월</option>
                         <option>2월</option>
                         <option>3월</option>
@@ -363,13 +362,13 @@
             
                 <div class="calendar__body">
                     <div class="calendar__days">
+                        <div>일</div>
                         <div>월</div>
                         <div>화</div>
                         <div>수</div>
                         <div>목</div>
                         <div>금</div>
                         <div>토</div>
-                        <div>일</div>
                     </div>
             
                     <div class="calendar__dates">
@@ -454,6 +453,8 @@
         </div>
         
     </footer>
+
+    <script src="../js/booking.js"></script>
 
 </body>
 </html>

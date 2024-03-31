@@ -140,7 +140,7 @@ html, body {
     transition: background-color 0.3s ease;
 }
 .calendar__date:not(.calendar__date--selected):not(.calendar__date--grey):hover::before {
-    background-color: #ededed;
+    background-color: #FF9DA7;
 }
 .calendar__date--grey {
     color: #c5c8ca;
@@ -181,16 +181,7 @@ html, body {
     border-radius: var(--accent-br);
     z-index: 1;
 }
-.calendar__date--range-end::after {
-    content: "";
-    position: absolute;
-    height: calc(var(--height) * 0.9);
-    background-color: #ffeaec;
-    width: 50px;
-    top: 50%;
-    right: 50%;
-    transform: translateY(-50%);
-}
+
 .calendar__date span {
     position: relative;
     z-index: 1;
