@@ -57,19 +57,26 @@ html, body {
     font-weight: bold;
     color: #ff374b;
 }
-.service button {
-    float: left;
+.service .show_more {
     padding: 10px;
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
-
-
-.non-selected {
-    filter: brightness(50%)
-
+.service .select_service {
+    padding: 10px;
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
 }
+
+.services .select {
+    border-width: 5px;
+    border-color: #ff374b;
+    border-style: solid;
+    border-radius: 40px;
+}
+
 
 
 .calendar {
@@ -200,6 +207,7 @@ html, body {
 .calendar__button--primary {
     background-color: #1752ff;
     color: #fff;
+    width: 360px;
     transition: box-shadow 0.3s cubic-bezier(0.21, 0.68, 0.09, 0.27), transform 0.2s linear;
 }
 .calendar__button--primary:hover {
@@ -210,6 +218,54 @@ html, body {
     box-shadow: 0 10px 10px -6px rgba(23, 82, 255, 0.45);
     transform: translateY(-1px);
 }
+
+
+.time__buttons {
+    background: #fff;
+    padding: 10px;
+    align-items: center;
+    align-self: auto;
+    display: flex;
+    justify-content: center;
+}
+.time__buttons button {
+    margin: 0;
+    padding: 5px;
+    width: 35px;
+    height: 50px;
+    border-radius: 0;
+}
+.time__buttons .time__button__start {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.time__buttons .time__button__end {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.time__buttons .select {
+    background-color: #ff374b;
+}
+
+
+
+.members {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.members_text {
+    font-size: 25px;
+    font-weight: bold;
+}
+.member {
+    font-size: 35px;
+    font-weight: bold;
+}
+
 
 
 #layer_bg {
@@ -234,13 +290,22 @@ html, body {
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
-    width: 600px;
-    height: 400px;
+    width: 1000px;
+    height: 600px;
     background: #fff;
     box-shadow: 7px, 7px, 5px, rgba(0, 0, 0, 0.2);
+
+    overflow: auto;
 }
 #layer_bg .popup button {
     float: right;
+}
+#layer_bg .popup h2 {
+    font-size: x-large;
+    font-weight: bold;
+}
+#layer_bg .popup p {
+    font-size: medium;
 }
 
 
