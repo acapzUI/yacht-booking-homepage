@@ -4,24 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Starbucks Coffee Korea</title>
+  <title>파라다이스 요트 클럽</title>
 
   <!--Open Graph-->
   <!--http://ogp.me/-->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Starbucks" />
-  <meta property="og:title" content="Starbucks Coffee Korea" />
-  <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="og:image" content="../images/starbucks_seo.jpg" />
+  <meta property="og:site_name" content="ParadiceYachtClub"/>
+  <meta property="og:title" content="파라다이스 요트 클럽" />
+  <meta property="og:description" content="파라다이스 요트 클럽" />
+  <meta property="og:image" content="./images/starbucks_seo.jpg" />
   <meta property="og:url" content="https://starbucks.co.kr" />
 
   <!--Twitter Card-->
   <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
   <meta property="twitter:card" content="summary" />
-  <meta property="twitter:site" content="Starbucks" />
-  <meta property="twitter:title" content="Starbucks Coffee Korea" />
-  <meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="twitter:image" content="../images/starbucks_seo.jpg" />
+  <meta property="twitter:site" content="ParadiceYachtClub" />
+  <meta property="twitter:title" content="파라다이스 요트 클럽" />
+  <meta property="twitter:description" content="파라다이스 요트 클럽" />
+  <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
   <meta property="twitter:url" content="https://starbucks.co.kr" />
 
   <!--파비콘-->
@@ -34,219 +34,466 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
   <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
   <link rel="stylesheet" href="../css/common.css" />
-  <link rel="stylesheet" href="../css/signin.css" />
+  <link rel="stylesheet" href="../css/ouryacht.css" />
 
   <script defer src="../js/common.js"></script>
 </head>
 <body>
 
-  <!--HEADER-->
-  <header>
-    <div class="inner">
+    <!--HEADER-->
+    <header>
+        <div class="inner">
 
-      <a href="/" class="logo">
-        <img src="../images/starbucks_logo.png" alt="STARBUCKS" />
-      </a>
+        <a href="/" class="logo">
+            <img src="/images/header/title.png" alt="파라다이스 요트 클럽" />
+        </a>
+        <!--a href="/" class="title">
+            <h1>파라다이스 요트 클럽</h1>
+        </a-->
 
-      <div class="sub-menu">
-        <ul class="menu">
-          <li>
-            <a href="/signin">Sign In</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">My Starbucks</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">Customer Service & Ideas</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">Find a Store</a>
-          </li>
+        
+
+        <ul class="main-menu">
+            <li class="item">
+            <div class="item__name">예약하기</div>
+            <div class="item__contents">
+                <div class="contents__menu">
+                <ul class="inner">
+                    <li>
+                        <a href="/booking/">
+                            <img src="/images/header/book.png" alt="예약하기" />
+                            <h4>예약하기</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/signin/">
+                            <img src="/images/header/check.png" alt="확인하기" />
+                            <h4>내 예약 확인하기</h4>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </li>
+            <li class="item">
+            <div class="item__name">투어 상품</div>
+            <div class="item__contents">
+                <div class="contents__menu">
+                <ul class="inner">
+                    <li>
+                        <img src="/images/header/tour_item.png" alt="투어 상품"/>
+                        <h4>투어 상품</h4>
+                        <ul>
+                            <li>세일링 체험</li>
+                            <li>세일링과 피크닉</li>
+                            <li>선상 파티</li>
+                            <li>선상 프로포즈</li>
+                            <li>케이터링</li>
+                    </ul>
+                    </li>
+                    <li>
+                        <img src="/images/header/current_event.png" alt="진행중인 이벤트"/>
+                        <h4>진행중인 이벤트</h4>
+                        <ul>
+                            <li>이벤트 1</li>
+                            <li>이벤트 1</li>
+                            <li>이벤트 1</li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </li>
+            <li class="item">
+            <div class="item__name">우리 요트</div>
+            <div class="item__contents">
+                <div class="contents__menu">
+                <ul class="inner">
+                    <li>
+                        <img src="/images/header/yacht.png" alt="요트"/>
+                        <h4>요트</h4>
+                        <ul>
+                            <li>머메이드</li>
+                            <li>와이콕스</li>
+                            <li>소녀시대</li>
+                            <li>미아모</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="/images/header/boat.png" alt="보트"/>
+                        <h4>보트</h4>
+                        <ul>
+                            <li>트와이스</li>
+                            <li>영화호</li>
+                            <li>휴정호</li>
+                            <li>조윤호</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="/images/header/party.png" alt="파티 보트"/>
+                        <h4>파티 보트</h4>
+                        <ul>
+                            <li>테티스</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="/images/header/premium.png" alt="고급 보트"/>
+                        <h4>고급 요트</h4>
+                        <ul>
+                            <li>다니엘</li>
+                            <li>실버톤</li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </li>
+            <li class="item">
+            <div class="item__name">요트 아카데미</div>
+            <div class="item__contents">
+                <div class="contents__menu">
+                <ul class="inner">
+                    <li>
+                        <img src="/images/header/club.png" alt="클럽"/>
+                        <h4>파라다이스 요트클럽</h4>
+                        <ul>
+                            <li>우리클럽 소개</li>
+                            <li>찾아오시는 길</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="/images/header/test.png" alt="시험"/>
+                        <h4>면허 시험</h4>
+                        <ul>
+                            <li>요트 면허</li>
+                            <li>조정면허 2급</li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </li>
+            <li class="item">
+            <div class="item__name">갤러리</div>
+            <div class="item__contents">
+                <div class="contents__menu">
+                <ul class="inner">
+                    <li>
+                        <img src="/images/header/gallery.png" alt="갤러리"/>
+                        <h4>갤러리</h4>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </li>
         </ul>
-        <div class="search">
-          <input type="text" />
-          <span class="material-icons">search</span>
+
         </div>
-      </div>
 
-      <ul class="main-menu">
-        <li class="item">
-          <div class="item__name">예약하기</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                <li>
-                  <h4>예약하기</h4>
-                  <ul>
-                    <li>스타벅스 원두</li>
-                    <li>스타벅스 비아</li>
-                    <li>스타벅스 오리가미</li>
-                  </ul>
-                </li>
-                <li>
-              </ul>
-            </div>
-            <div class="contents__texture">
-              <div class="inner">
-                <h4>나와 어울리는 커피 찾기</h4>
-                <p>스타벅스가 여러분에게 어울리는 커피를 찾아드립니다.</p>
-                <h4>최상의 커피를 즐기는 법</h4>
-                <p>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">투어 상품</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                <li>
-                  <h4>투어 상품</h4>
-                  <ul>
-                    <li>세일링 체험</li>
-                    <li>세일링과 피크닉</li>
-                    <li>선상 파티</li>
-                    <li>선상 프로포즈</li>
-                    <li>케이터링</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="contents__texture">
-              <div class="inner">
-                <h4>스타벅스 티바나</h4>
-                <p>다양한 찻잎과 향신료 등 개성있는 재료로 새로운 맛과 향의 티를 선보입니다.</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">우리 요트</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                <li>
-                  <h4>요트</h4>
-                  <ul>
-                    <li>머메이드</li>
-                    <li>와이콕스</li>
-                    <li>소녀시대</li>
-                    <li>미아모</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>보트</h4>
-                  <ul>
-                    <li>트와이스</li>
-                    <li>영화호</li>
-                    <li>휴정호</li>
-                    <li>조윤호</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>파티 보트</h4>
-                  <ul>
-                    <li>테티스</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>고급 요트</h4>
-                  <ul>
-                    <li>다니엘</li>
-                    <li>실버톤</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="contents__texture">
-              <div class="inner">
-                <h4>매장 찾기</h4>
-                <p>보다 빠르게 매장을 찾아보세요.</p>
-                <h4>청담스타</h4>
-                <p>스타벅스 1,000호점인 청담스타점을 만나보세요.</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">요트 아카데미</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                <li>
-                  <h4>파라다이스 요트클럽</h4>
-                </li>
-                <li>
-                  <h4>면허 시험</h4>
-                  <ul>
-                    <li>요트 면허</li>
-                    <li>조정면허 2급</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="contents__texture">
-              <div class="inner">
-                <h4>커피원두 재활용</h4>
-                <p>스타벅스 커피 원두를 재활용 해보세요.</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">갤러리</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                <li>
-                  <h4>마이 스타벅스 리워드</h4>
-                </li>
-                <li>
-                  <h4>스타벅스 카드</h4>
-                </li>
-                <li>
-                  <h4>스타벅스 카드 e-Gift</h4>
-                </li>
-              </ul>
-            </div>
-            <div class="contents__texture">
-              <div class="inner">
-                <h4>스타벅스 카드 등록하기</h4>
-                <p>카드 등록 후 리워드 서비스를 누리고 사용내역도 조회해보세요.</p>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+        <!--BADGES-->
+        <div class="badges">
+        <div class="badge">
+            <img src="/images/badge3.jpg" alt="Badge" />
+        </div>
+        <div class="badge">
+            <img src="/images/badge2.jpg" alt="Badge" />
+        </div>
+        </div>
+    </header>
 
+    <div class="top">
+        <div class="direction">
+            <h2>예약하실 상품을 선택해주세요.</h2>
+        </div>
+        
+        <div class="body_inline">
+            <div class="services">
+                <div class="service">
+                    <img src="/images/yachts/소녀시대.jpg"/>
+                    <div class="service_inline">
+                        <h1>소녀시대</h1>
+                        <h2>50,000원 / 30분</h2>
+                        <br> 
+                        <p>야마하 26Ft</p>
+                        <p>1시간 기준 15만원, 추가시간 30분당 5만원</p>
+                        <p>7인승 / 2인부터 6인까지 탑승가능</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick='popup("/images/yachts/소녀시대.jpg", "소녀시대", 
+                            "※예약 전 반드시 확인하세요※\n[취소 및 환불안내]\n-이용당일 기상특보 해상에 내려지는 풍랑경보이상 발생시 전액환불 및 날짜연기가능\n-이용당일 취소 및 환불불가\n-이용도중 취소 및 환불불가\n예약 후 기상특보 및 운영불가시 이용날짜 1회 변경가능 변경후 취소불가\n네이버 예약을 통해 원하시는 시간을 확인하여 문의주시면 빠른 진행이 가능합니다.\n상담 및 취소문의 010-4816-6274\n※탑승시간 꼭 지켜주세요.\n※ 예약시간보다 10분이상 늦을 경우 다음 타임 고객님의 서비스를 위하여 예약은 자동으로 취소가 될 수 있으니 양해 부탁드립니다.\n※문의사항은 전화로 부탁드립니다.\n※운항 중에는 답변이 늦을수 있는 점 양해부탁드립니다.\n※보다 더 나은 서비스로 보답하겠습니다. 감사합니다.\n야외에서 진행되는 특성상, 저녁시간에는 쌀쌀할 수 있으니 여분의 두꺼운 옷을 준비해 주시면 감사합니다.\n* 주차 안내\n한강 공용주차장 이용 (주차비 별도)"
+                            )'>자세히보기</button>
+                    </div>
+                </div><div class="service">
+                    <img src="/images/yachts/미아모.jpg"/>
+                    <div class="service_inline">
+                        <h1>미아모</h1>
+                        <h2>50,000원 / 30분</h2>
+                        <br>
+                        <p>야마하 26Ft</p>
+                        <p>1시간 기준 15만원, 추가시간 30분당 5만원</p>
+                        <p>7인승 / 2인부터 6인까지 탑승가능</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick="popup()">자세히보기</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/images/yachts/올리브.jpg"/>
+                    <div class="service_inline">
+                        <h1>올리브</h1>
+                        <h2>50,000원 / 30분</h2>
+                        <br>
+                        <p>야마하 26Ft</p>
+                        <p>1시간 기준 15만원, 추가시간 30분당 5만원</p>
+                        <p>7인승 / 2인부터 6인까지 탑승가능</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick="popup()">자세히보기</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/images/yachts/머메이드.jpg"/>
+                    <div class="service_inline">
+                        <h1>머메이드</h1>
+                        <h2>50,000원 / 30분</h2>
+                        <br>
+                        <p>베네토 31Ft</p>
+                        <p>4인/1시간 기준 20만원, 추가인원 1명당 3만원, 추가시간 30분당 5만원</p>
+                        <p>12인승 / 4인부터 11인까지 탑승가능</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick="popup()">자세히보기</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/images/yachts/와이콕스.png"/>
+                    <div class="service_inline">
+                        <h1>와이콕스</h1>
+                        <h2>50,000원 / 30분</h2>
+                        <br>
+                        <p>베네토 36Ft</p>
+                        <p>4인/1시간 기준 20만원, 추가인원 1명당 3만원, 추가시간 30분당 5만원</p>
+                        <p>12인승 / 4인부터 11인까지 탑승가능</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick="popup()">자세히보기</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/images/yachts/실버톤.jpg"/>
+                    <div class="service_inline">
+                        <h1>실버톤</h1>
+                        <h2>250,000원 / 30분</h2>
+                        <br>
+                        <p>43Ft, 단독요트, 7일전부터 사전예약</p>
+                        <p>1시간 기준 50만원</p>
+                        <p>12인승 / 4인부터 11인까지 탑승가능</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick="popup()">자세히보기</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/images/yachts/베네치아.png"/>
+                    <div class="service_inline">
+                        <h1>베네치아</h1>
+                        <h2>500,000원 / 30분</h2>
+                        <br>
+                        <p>55Ft, 단독요트, 7일전부터 사전예약</p>
+                        <p>1시간 기준 100만원</p>
+                        <p>50인승</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick="popup()">자세히보기</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/images/yachts/파티보트.jpg"/>
+                    <div class="service_inline">
+                        <h1>파티보트</h1>
+                        <h2>50,000원 / 30분</h2>
+                        <br>
+                        <p>썬트래커</p>
+                        <p>4인/1시간 기준 20만원, 추가인원 1명당 3만원, 추가시간 30분당 5만원</p>
+                        <p>12인승 / 4인부터 11인까지 탑승가능</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick="popup()">자세히보기</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/images/yachts/솔라보트.jpeg"/>
+                    <div class="service_inline">
+                        <h1>솔라보트</h1>
+                        <h2>50,000원 / 30분</h2>
+                        <br>
+                        <p>솔라이너</p>
+                        <p>9인승 / 4인부터 8인까지 탑승가능</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick="popup()">자세히보기</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/images/yachts/스피드보트.jpg"/>
+                    <div class="service_inline">
+                        <h1>스피드보트</h1>
+                        <h2>120,000원 / 30분</h2>
+                        <br>
+                        <p>스피드보트</p>
+                        <p>10분당 4만원</p>
+                        <p>7인승</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick="popup()">자세히보기</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/images/yachts/케이터링.png"/>
+                    <div class="service_inline">
+                        <h1>케이터링</h1>
+                        <h2>45,000원 / 30분</h2>
+                        <br>
+                        <p>세일링 파라다이스 케이터링</p>
+                        <p>[요트박스1] 5~6인분, 3박스 15만원</p>
+                        <p>[요트박스2] 8인분, 6박스 25만원</p>
+                        <p>[추가메뉴 한입 토핑유부] 8인분, 2만원</p>
+                        <button class="select_service">선택</button>
+                        <button class="show_more" onclick="popup()">자세히보기</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="calendar">
+                <div class="calendar__opts">
+                    <select name="calendar__month" id="calendar__month" onchange="monthChangedLisntener()">
+                        <option>1월</option>
+                        <option>2월</option>
+                        <option>3월</option>
+                        <option>4월</option>
+                        <option selected>5월</option>
+                        <option>6월</option>
+                        <option>7월</option>
+                        <option>8월</option>
+                        <option>9월</option>
+                        <option>10월</option>
+                        <option>11월</option>
+                        <option>12월</option>
+                    </select>
+            
+                    <select name="calendar__year" id="calendar__year" onchange="yearChangedLisntener()">
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option selected>2020</option>
+                    </select>
+                </div>
+            
+                <div class="calendar__body">
+                    <div class="calendar__days">
+                        <div>일</div>
+                        <div>월</div>
+                        <div>화</div>
+                        <div>수</div>
+                        <div>목</div>
+                        <div>금</div>
+                        <div>토</div>
+                    </div>
+            
+                    <div class="calendar__dates">
+                        <div class="calendar__date calendar__date--grey"><span>27</span></div>
+                        <div class="calendar__date calendar__date--grey"><span>28</span></div>
+                        <div class="calendar__date calendar__date--grey"><span>29</span></div>
+                        <div class="calendar__date calendar__date--grey"><span>30</span></div>
+                        <div class="calendar__date"><span>1</span></div>
+                        <div class="calendar__date"><span>2</span></div>
+                        <div class="calendar__date"><span>3</span></div>
+                        <div class="calendar__date"><span>4</span></div>
+                        <div class="calendar__date"><span>5</span></div>
+                        <div class="calendar__date"><span>6</span></div>
+                        <div class="calendar__date"><span>7</span></div>
+                        <div class="calendar__date"><span>8</span></div>
+                        <div class="calendar__date"><span>9</span></div>
+                        <div class="calendar__date"><span>10</span></div>
+                        <div class="calendar__date"><span>11</span></div>
+                        <div class="calendar__date"><span>12</span></div>
+                        <div class="calendar__date"><span>13</span></div>
+                        <div class="calendar__date"><span>14</span></div>
+                        <div class="calendar__date"><span>15</span></div>
+                        <div class="calendar__date calendar__date--selected calendar__date--first-date calendar__date--range-start"><span>16</span></div>
+                        <div class="calendar__date calendar__date--selected calendar__date--last-date"><span>17</span></div>
+                        <div class="calendar__date calendar__date--selected calendar__date--first-date"><span>18</span></div>
+                        <div class="calendar__date calendar__date--selected"><span>19</span></div>
+                        <div class="calendar__date calendar__date--selected"><span>20</span></div>
+                        <div class="calendar__date calendar__date--selected calendar__date--last-date calendar__date--range-end"><span>21</span></div>
+                        <div class="calendar__date"><span>22</span></div>
+                        <div class="calendar__date"><span>23</span></div>
+                        <div class="calendar__date"><span>24</span></div>
+                        <div class="calendar__date"><span>25</span></div>
+                        <div class="calendar__date"><span>26</span></div>
+                        <div class="calendar__date"><span>27</span></div>
+                        <div class="calendar__date"><span>28</span></div>
+                        <div class="calendar__date"><span>29</span></div>
+                        <div class="calendar__date"><span>30</span></div>
+                        <div class="calendar__date"><span>31</span></div>
+                    </div>
+                </div>
+        
+                <div class="time__buttons">
+                    <button class="time__button time__button__start">10</button>
+                    <button class="time__button">11</button>
+                    <button class="time__button">12</button>
+                    <button class="time__button">01</button>
+                    <button class="time__button">02</button>
+                    <button class="time__button">03</button>
+                    <button class="time__button">04</button>
+                    <button class="time__button">05</button>
+                    <button class="time__button">06</button>
+                    <button class="time__button time__button__end">07</button>
+                </div>
+
+                <div class="members">
+                    <span class="members_text">인원수 </span>
+                    <div class="members_floating">
+                        <span class="material-symbols-outlined" onclick="memberDecrese()">chevron_left</span>
+                        <span class="member">1</span>
+                        <span class="material-symbols-outlined" onclick="memberIncrese()">chevron_right</span>
+                    </div>
+                </div>
+                
+                <div class="calendar__buttons">
+                    <button class="calendar__button calendar__button--primary">Apply</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
 
 
-  <section>
-    <img src
-  </section>
-
-
-  <!--FOOTER-->
-  <footer>
-    <div class="inner">
-
-      <div class="info">
-        <span>사업자등록번호 306-82-60479</span>
-        <span>한국해양교육협회 대표이사 천찬희</span>
-        <span>TEL: 02)521-0120 / FAX: 02)0504-292-7583</span>
-      </div>
-
-      <p class="copyright">
-        &copy; <span class="this-year"></span> Paradise Yacht Club. All Rights Reserved.
-      </p>
+    <div id="layer_bg">
+        <div class="popup">
+            <button onclick="document.getElementById('layer_bg').classList.toggle('showed')">X</button>
+            <img src="/images/yachts/머메이드.jpg">
+            
+            <h2>제목</h2>
+            <p>설명</p>
+        </div>
     </div>
-    
-  </footer>
+  
+  
+
+    <!--FOOTER-->
+    <footer>
+        <div class="inner">
+
+            <div class="info">
+                <span>사업자등록번호 306-82-60479</span>
+                <span>한국해양교육협회 대표이사 천찬희</span>
+                <span>TEL: 02)521-0120 / FAX: 02)0504-292-7583</span>
+            </div>
+
+            <p class="copyright">
+                &copy; <span class="this-year"></span> Paradise Yacht Club. All Rights Reserved.
+            </p>
+        </div>
+        
+    </footer>
+
+    <script src="../js/booking.js"></script>
 
 </body>
 </html>
