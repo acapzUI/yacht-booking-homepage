@@ -130,12 +130,13 @@ function popup(img, h2, p) {
 }
 
 const selectServices = document.querySelectorAll(".select_service");
+
 const services = document.querySelectorAll(".service");
-selectServices.forEach((selectService)=>{
-    selectService.addEventListener('click',()=>{
+services.forEach((service)=>{
+    service.addEventListener('click',()=>{
         services.forEach((e)=> {
             e.classList.remove('select')
         })
-        selectService.parentElement.parentElement.classList.add('select')
+        service.classList.add('select')
     })
 })
