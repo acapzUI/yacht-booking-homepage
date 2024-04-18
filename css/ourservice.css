@@ -11,8 +11,11 @@ body {
 
 .main_text {
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 200;
     text-align: center;
+}
+.main_text b {
+    font-weight: bold;
 }
 .sub_text {
     font-size: 30px;
@@ -25,11 +28,11 @@ body {
 }
 .service_container .main_pic {
     width: 500px;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 .service_textbox {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .service_textbox h2 {
     font-size: 40px;

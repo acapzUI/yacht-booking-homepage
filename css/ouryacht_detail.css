@@ -8,7 +8,7 @@ body {
 
 .inline {
     display: flex;
-    margin-left: 400px;
+    margin-left: 300px;
     margin-top: 130px;
 }
 
@@ -16,7 +16,7 @@ body {
     width: 500px;
     height: 700px;
     
-    object-fit: cover;
+    object-fit: contain;
 }
 .inline_text {
     margin-left: 50px;
@@ -32,4 +32,22 @@ body {
 }
 .inline_text p {
     font-size: 20px;
+}
+
+.detail_table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 22px;
+    font-weight: 400;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.detail_table th {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+.detail_table th, td {
+    padding : 5px;
 }
