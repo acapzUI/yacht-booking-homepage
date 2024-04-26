@@ -1,32 +1,32 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Starbucks Coffee Korea</title>
+  <title>파라다이스 요트 클럽</title>
 
   <!--Open Graph-->
   <!--http://ogp.me/-->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Starbucks" />
-  <meta property="og:title" content="Starbucks Coffee Korea" />
-  <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="og:image" content="../images/starbucks_seo.jpg" />
+  <meta property="og:site_name" content="ParadiceYachtClub"/>
+  <meta property="og:title" content="파라다이스 요트 클럽" />
+  <meta property="og:description" content="파라다이스 요트 클럽" />
+  <meta property="og:image" content="./images/starbucks_seo.jpg" />
   <meta property="og:url" content="https://starbucks.co.kr" />
 
   <!--Twitter Card-->
   <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
   <meta property="twitter:card" content="summary" />
-  <meta property="twitter:site" content="Starbucks" />
-  <meta property="twitter:title" content="Starbucks Coffee Korea" />
-  <meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-  <meta property="twitter:image" content="../images/starbucks_seo.jpg" />
+  <meta property="twitter:site" content="ParadiceYachtClub" />
+  <meta property="twitter:title" content="파라다이스 요트 클럽" />
+  <meta property="twitter:description" content="파라다이스 요트 클럽" />
+  <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
   <meta property="twitter:url" content="https://starbucks.co.kr" />
 
   <!--파비콘-->
   <!--<link rel="shortcut icon" href="favicon.ico" />-->
-  <link rel="icon" href="../favicon.png" />
+  <link rel="icon" href="../favicon.jpg" />
   <!--브라우저 스타일 초기화-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <!--Google Fonts - 나눔고딕-->
@@ -34,9 +34,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
   <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-  <link rel="stylesheet" href="../css/common.css" />
-  <link rel="stylesheet" href="../css/signin.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="/css/common.css" />
+  <link rel="stylesheet" href="/css/ouryacht_detail.css" />
 
   <script defer src="../js/common.js"></script>
 </head>
@@ -52,8 +57,6 @@
         <!--a href="/" class="title">
             <h1>파라다이스 요트 클럽</h1>
         </a-->
-
-        
 
         <ul class="main-menu">
             <li class="item">
@@ -112,22 +115,18 @@
                 <div class="contents__menu">
                 <ul class="inner">
                     <li>
-                        <a href="/ouryacht/">
-                            <img src="/images/header/yacht.png" alt="요트"/>
-                            <h4>요트</h4>
-                        </a>
+                        <img src="/images/header/yacht.png" alt="요트"/>
+                        <h4>요트</h4>
                         <ul>
-                            <a href="/ouryacht/marmaid/"><li>머메이드</li></a>
-                            <a href="/ouryacht/marmaid/"><li>와이콕스</li></a>
-                            <a href="/ouryacht/marmaid/"><li>소녀시대</li></a>
-                            <a href="/ouryacht/marmaid/"><li>미아모</li></a>
+                            <li>머메이드</li>
+                            <li>와이콕스</li>
+                            <li>소녀시대</li>
+                            <li>미아모</li>
                         </ul>
                     </li>
                     <li>
-                        <a href="/ouryacht/">
-                            <img src="/images/header/boat.png" alt="보트"/>
-                            <h4>보트</h4>
-                        </a>
+                        <img src="/images/header/boat.png" alt="보트"/>
+                        <h4>보트</h4>
                         <ul>
                             <li>트와이스</li>
                             <li>영화호</li>
@@ -195,48 +194,120 @@
         </ul>
 
         </div>
-
-        <!--BADGES-->
-        <div class="badges">
-        <div class="badge">
-            <img src="/images/badge3.jpg" alt="Badge" />
-        </div>
-        <div class="badge">
-            <img src="/images/badge2.jpg" alt="Badge" />
-        </div>
-        </div>
     </header>
 
 
-  <section class="signin">
-    <h1>로그인</h1>
-    <div class="signin__card">
-      <h2>
-        <strong>Welcome!</strong><br>파라다이스 요트 클럽에 오신 것을 환영합니다.
-      </h2>
-      <button>
-        <img src="../images/naver_login.png"/>
-      </button>
+    <div class="top">
+        <div class="inline">
+            <div class="swiper mSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/images/yachts/와이콕스-2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/yachts/와이콕스-2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/yachts/와이콕스-2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/yachts/와이콕스-2.jpg">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span> 
+                </div>
+            </div>
+            <div class="inline_text">
+                <h2>와이콕스-전사호</h2>
+                <table class="detail_table">
+                    <tr>
+                        <th>제조사</th>
+                        <td>베네토우(프랑스)</td>
+                    </tr>
+                    <tr>
+                        <th>총 톤수</th>
+                        <td>5.27 ton</td>
+                    </tr>
+                    <tr>
+                        <th>길이</th>
+                        <td>10.4 Meter(36 ft)</td>
+                    </tr>
+                    <tr>
+                        <th>넓이</th>
+                        <td>3.1 Meter</td>
+                    </tr>
+                    <tr>
+                        <th>엔진</th>
+                        <td>야마하 28/25</td>
+                    </tr>
+                    <tr>
+                        <th>정원</th>
+                        <td>12명</td>
+                    </tr>
+                </table>
+                <br>
+                <p>머메이드호는 그 이름처럼 바다의 인어와 같이 우아하고 아름다운 자태를 자랑합니다. 머메이드 호는 단순히 요트에 불과한 것이 아니라, 바다 위에서의 로맨틱한 순간을 위한 완벽한 장소로 각인되어 있습니다. 머메이드호에서는 특별한 순간을 만들기 위한 프로포즈를 포함한 다양한 이벤트를 진행할 수 있습니다. 바다의 푸른 풍경과 함께하는 이 순간은 연인들뿐만 아니라 친구나 가족과 함께하는 특별한 시간이 될 것입니다. 이곳에서 경험하는 순간은 평범한 요트 여행 이상으로 특별하고 기억에 남을 것입니다. 함께 아름다운 추억을 만들고 싶다면, 머메이드호에서의 여정을 선택해 보세요.</p>    
+            </div>
+        </div>
     </div>
-  </section>
-
+  
+    <br>
+    <br>
 
     <!--FOOTER-->
     <footer>
-      <div class="inner">
-  
-        <div class="info">
-          <span>사업자등록번호 306-82-60479</span>
-          <span>한국해양교육협회 대표이사 천찬희</span>
-          <span>TEL: 02)521-0120 / FAX: 02)0504-292-7583</span>
+        <div class="inner">
+
+            <div class="info">
+                <span>사업자등록번호 306-82-60479</span>
+                <span>한국해양교육협회 대표이사 천찬희</span>
+                <span>TEL: 02)521-0120 / FAX: 02)0504-292-7583</span>
+            </div>
+
+            <p class="copyright">
+                &copy; <span class="this-year"></span> Paradise Yacht Club. All Rights Reserved.
+            </p>
         </div>
-  
-        <p class="copyright">
-          &copy; <span class="this-year"></span> Paradise Yacht Club. All Rights Reserved.
-        </p>
-      </div>
-      
+        
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mSwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        on: {
+            autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+        }
+        });
+    </script>
 
 </body>
 </html>

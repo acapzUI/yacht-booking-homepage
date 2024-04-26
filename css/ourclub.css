@@ -1,0 +1,52 @@
+
+body {
+    background-color: #eaedf2;
+    font-family: "Gothic A1", sans-serif;
+}
+.top {
+    display: grid;
+    place-items: center;
+    margin-top: 90px;
+}
+
+.main_pic {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.main_text {
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+}
+.main_text b {
+    font-weight: bold;
+}
+.sub_text {
+    width: 1000px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+.detail_table {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 400;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.detail_table th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.detail_table th, td {
+    padding : 5px;
+    border: 1px solid;
+}
+

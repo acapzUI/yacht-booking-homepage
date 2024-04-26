@@ -1,0 +1,47 @@
+
+body {
+    background-color: #eaedf2;
+    font-family: "Gothic A1", sans-serif;
+}
+.top {
+    display: grid;
+    place-items: center;
+    margin-top: 90px;
+}
+
+.main_text {
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+}
+.main_text b {
+    font-weight: bold;
+}
+.sub_text {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.service_container {
+    display: inline-flex;
+    margin-bottom: 50px;
+}
+.service_container .main_pic {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+.service_textbox {
+    margin-left: 20px;
+}
+.service_textbox h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.service_textbox p, a {
+    font-size: 20px;
+}
+.service_textbox a {
+    font-weight: 900;
+}
