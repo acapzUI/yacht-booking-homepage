@@ -37,8 +37,10 @@
   <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="/css/common.css" />
-  <link rel="stylesheet" href="/css/ourservice.css" />
+  <link rel="stylesheet" href="/css/ourservice_detail.css" />
 
   <script defer src="../js/common.js"></script>
 </head>
@@ -195,44 +197,68 @@
 
 
     <div class="top">
-        <img class="main_pic" src="/images/ourservice.jpg">
+        <!--img class="main_pic" src="/images/ourclub.jpg"-->
         <br>
-        <h2 class="main_text"><b>파라다이스 요트클럽</b>와<br><b>환상적인 요트여행</b>을.</h2>
-        <br>
-        <br>
-        <div class="service_container_4">
-            <div class="service">
-                <a href="/ouryacht/marmaid/">
-                    <img src="/images/yachts/머메이드.jpg">
-                    <h1>세일링 체험</h1>
-                    <p>우아함의 상징. 함께하는 특별한 순간을 위한 완벽한 선택.</p>
-                </a>
+        <div class="swiper mSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/images/yachts/와이콕스-2.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/yachts/와이콕스-2.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/yachts/와이콕스-2.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/images/yachts/와이콕스-2.jpg">
+                </div>
             </div>
-            <div class="service">
-                <a href="/ouryacht/wycox/">
-                    <img src="/images/yachts/와이콕스.png">
-                    <h1>선상 파티</h1>
-                    <p>전투의 기운을 담은 프랑스 베네토우 요트. 전사와 같은 저돌적이고 안정적인 세일링.</p>
-                </a>
-            </div>
-            <div class="service">
-                <a href="/ouryacht/girlsgeneration/">
-                    <img src="/images/yachts/소녀시대.jpg">
-                    <h1>선상 프로포즈</h1>
-                    <p>깜찍함이 담긴 요트 면허 시험대비 전용 선박. 클럽의 역사적인 주역이자, 자유로운 세일에 적합.</p>
-                </a>
-            </div>
-            <div class="service">
-                <a href="/ouryacht/miamo/">
-                    <img src="/images/yachts/미아모.jpg">
-                    <h1>케이터링</h1>
-                    <p>작지만 사랑의 의미를 담은 21ft 요트. 민첩하게 조종 가능하며, 약한 바람에도 안정적인 세일을 제공.</p>
-                </a>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span> 
             </div>
         </div>
-
+        <div class="textbox">
+            <h2 class="main_text"><b>최고의 세일링 경험</b>을 위해<br><b>최선</b>을 다하겠습니다.</h2>
+            <br>
+            <p class="sub_text">파라다이스 요트 클럽은 국내 최대 규모로 약 250명의 회원을 자랑합니다. 회원가입 시 평생 회원 자격이 주어져 추가 비용 없이 요트 세일링을 자유롭게 즐길 수 있습니다. 또한, 회원들은 요트/보트 조정 면허 취득을 위한 교육을 받을 수 있으며, 교육비용은 전액 무료입니다. 약 한 달 내에 면허를 취득하여 전문 세일러가 되실 수 있습니다. 클럽에서 보유한 요트는 회원들이 언제든지 자유롭게 운행할 수 있으며, 라이선스를 취득한 후 독립적으로 운행할 수 있습니다.</p>
+    
+            <table class="detail_table">
+                <tr>
+                    <th>클럽명</th>
+                    <td>파라다이스 요트 클럽</td>
+                </tr>
+                <tr>
+                    <th>사업자등록번호</th>
+                    <td>306-82-60479</td>
+                </tr>
+                <tr>
+                    <th>소재지</th>
+                    <td>서울시 영등포구 여의동로 252 한강 파라다이스 내<br>세일링 파라다이스 요트 클럽</td>
+                </tr>
+                <tr>
+                    <th>연락처</th>
+                    <td>TEL: 02)521-0120<br>FAX: 02)0504-292-7583</td>
+                </tr>
+                <tr>
+                    <th>엔진</th>
+                    <td>야마하 23/25</td>
+                </tr>
+                <tr>
+                    <th>정원</th>
+                    <td>12명</td>
+                </tr>
+            </table>
+        </div>
         <br>
         <br>
+        
     </div>
 
   
@@ -255,7 +281,37 @@
         
     </footer>
 
-    <script src="../js/booking.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mSwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        on: {
+            autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+        }
+        });
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,107 @@
+
+body {
+    background-color: #eaedf2;
+    font-family: "Gothic A1", sans-serif;
+}
+.top {
+    margin-top: 90px;
+}
+
+.main_pic {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.main_text {
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+}
+.main_text b {
+    font-weight: bold;
+}
+.sub_text {
+    width: 800px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.textbox {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px ;
+}
+
+.detail_table {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 400;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.detail_table th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.detail_table th, td {
+    padding : 5px;
+    border: 1px solid;
+}
+
+.swiper {
+    width: 500px;
+    height: 700px;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
