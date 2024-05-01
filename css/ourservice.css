@@ -55,7 +55,7 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     
-    object-fit: auto;
+    object-fit: cover;
 }
 .service h1 {
     font-size: 20px;

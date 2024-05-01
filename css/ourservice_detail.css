@@ -54,8 +54,8 @@ body {
 }
 
 .swiper {
-    width: 500px;
-    height: 700px;
+    width: 800px;
+    height: 800px;
     margin-left: 100px;
     display: inline-block;
 }
@@ -71,8 +71,8 @@ body {
 
 .swiper-slide img {
     display: block;
-    width: 500px;
-    height: 700px;
+    width: 800px;
+    height: 800px;
     object-fit: cover;
 }
 
