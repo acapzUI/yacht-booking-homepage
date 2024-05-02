@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
@@ -36,6 +36,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
   <link rel="stylesheet" href="/css/common.css" />
   <link rel="stylesheet" href="/css/ouryacht_detail.css" />
@@ -83,23 +86,27 @@
                 <div class="contents__menu">
                 <ul class="inner">
                     <li>
-                        <img src="/images/header/tour_item.png" alt="투어 상품"/>
-                        <h4>투어 상품</h4>
+                        <a href="/ourservice">
+                            <img src="/images/header/tour_item.png" alt="투어 상품"/>
+                            <h4>투어 상품</h4>
+                        </a>
                         <ul>
-                            <li>세일링 체험</li>
-                            <li>세일링과 피크닉</li>
-                            <li>선상 파티</li>
-                            <li>선상 프로포즈</li>
-                            <li>케이터링</li>
+                            <a href="/ourservice/sailing"><li>세일링 체험</li></a>
+                            <a href="/ourservice/picnic"><li>세일링과 피크닉</li></a>
+                            <a href="/ourservice/party"><li>선상 파티</li></a>
+                            <a href="/ourservice/proposal"><li>선상 프로포즈</li></a>
+                            <a href="/ourservice/catering"><li>케이터링</li></a>
                     </ul>
                     </li>
                     <li>
-                        <img src="/images/header/current_event.png" alt="진행중인 이벤트"/>
-                        <h4>진행중인 이벤트</h4>
+                        <a href="/event">
+                            <img src="/images/header/current_event.png" alt="진행중인 이벤트"/>
+                            <h4>진행중인 이벤트</h4>
+                        </a>
                         <ul>
-                            <li>이벤트 1</li>
-                            <li>이벤트 1</li>
-                            <li>이벤트 1</li>
+                            <a href="/event"><li>이벤트 1</li></a>
+                            <a href="/event"><li>이벤트 1</li></a>
+                            <a href="/event"><li>이벤트 1</li></a>
                         </ul>
                     </li>
                 </ul>
@@ -112,38 +119,46 @@
                 <div class="contents__menu">
                 <ul class="inner">
                     <li>
-                        <img src="/images/header/yacht.png" alt="요트"/>
-                        <h4>요트</h4>
+                        <a href="/ouryacht/">
+                            <img src="/images/header/yacht.png" alt="요트"/>
+                            <h4>요트</h4>
+                        </a>
                         <ul>
-                            <li>머메이드</li>
-                            <li>와이콕스</li>
-                            <li>소녀시대</li>
-                            <li>미아모</li>
+                            <a href="/ouryacht/marmaid"><li>머메이드</li></a>
+                            <a href="/ouryacht/wycox"><li>와이콕스</li></a>
+                            <a href="/ouryacht/gg"><li>소녀시대</li></a>
+                            <a href="/ouryacht/miamo"><li>미아모</li></a>
                         </ul>
                     </li>
                     <li>
-                        <img src="/images/header/boat.png" alt="보트"/>
-                        <h4>보트</h4>
+                        <a href="/ouryacht/">
+                            <img src="/images/header/boat.png" alt="보트"/>
+                            <h4>보트</h4>
+                        </a>
                         <ul>
-                            <li>트와이스</li>
-                            <li>영화호</li>
-                            <li>휴정호</li>
-                            <li>조윤호</li>
+                            <a href="/ouryacht/twice"><li>트와이스</li></a>
+                            <a href="/ouryacht/yeonghwaho"><li>영화호</li></a>
+                            <a href="/ouryacht/hyujeongho"><li>휴정호</li></a>
+                            <a href="/ouryacht/joyunho"><li>조윤호</li></a>
                         </ul>
                     </li>
                     <li>
-                        <img src="/images/header/party.png" alt="파티 보트"/>
-                        <h4>파티 보트</h4>
+                        <a href="/ouryacht/tetis">
+                            <img src="/images/header/party.png" alt="파티 보트"/>
+                            <h4>파티 보트</h4>
+                        </a>
                         <ul>
-                            <li>테티스</li>
+                            <a href="/ouryacht/tetis"><li>테티스</li></a>
                         </ul>
                     </li>
                     <li>
-                        <img src="/images/header/premium.png" alt="고급 보트"/>
-                        <h4>고급 요트</h4>
+                        <a href="/ouryacht/">
+                            <img src="/images/header/premium.png" alt="고급 요트"/>
+                            <h4>고급 요트</h4>
+                        </a>
                         <ul>
-                            <li>다니엘</li>
-                            <li>실버톤</li>
+                            <a href="/ouryacht/daniel"><li>다니엘</li></a>
+                            <a href="/ouryacht/silvertone"><li>실버톤</li></a>
                         </ul>
                     </li>
                 </ul>
@@ -156,19 +171,23 @@
                 <div class="contents__menu">
                 <ul class="inner">
                     <li>
-                        <img src="/images/header/club.png" alt="클럽"/>
-                        <h4>파라다이스 요트클럽</h4>
+                        <a href="/ourclub/">
+                            <img src="/images/header/club.png" alt="클럽"/>
+                            <h4>파라다이스 요트클럽</h4>
+                        </a>
                         <ul>
-                            <li>우리클럽 소개</li>
-                            <li>찾아오시는 길</li>
+                            <a href="/ourclub"><li>우리클럽 소개</li></a>
+                            <a href="/address"><li>찾아오시는 길</li></a>
                         </ul>
                     </li>
                     <li>
-                        <img src="/images/header/test.png" alt="시험"/>
-                        <h4>면허 시험</h4>
+                        <a href="/test/">
+                            <img src="/images/header/test.png" alt="시험"/>
+                            <h4>면허 시험</h4>
+                        </a>
                         <ul>
-                            <li>요트 면허</li>
-                            <li>조정면허 2급</li>
+                            <a href="/test"><li>요트 면허</li></a>
+                            <a href="/test"><li>조정면허 2급</li></a>
                         </ul>
                     </li>
                 </ul>
@@ -181,8 +200,10 @@
                 <div class="contents__menu">
                 <ul class="inner">
                     <li>
-                        <img src="/images/header/gallery.png" alt="갤러리"/>
-                        <h4>갤러리</h4>
+                        <a href="/gallery/">
+                            <img src="/images/header/gallery.png" alt="갤러리"/>
+                            <h4>갤러리</h4>
+                        </a>
                     </li>
                 </ul>
                 </div>
@@ -196,10 +217,33 @@
 
     <div class="top">
         <div class="inline">
-            <img class="main_pic" src="/images/yachts/머메이드-2.jpg">
+            <div class="swiper mSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/images/yachts/머1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/yachts/머2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/yachts/머3.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/yachts/머4.jpg">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span> 
+                </div>
+            </div>
             <div class="inline_text">
                 <h2>머메이드-인어호</h2>
-                <h3>베네토 31pt</h3>
                 <table class="detail_table">
                     <tr>
                         <th>제조사</th>
@@ -207,19 +251,23 @@
                     </tr>
                     <tr>
                         <th>총 톤수</th>
-                        <td>3.23 ton</td>
+                        <td>5.27 ton</td>
                     </tr>
                     <tr>
                         <th>길이</th>
-                        <td>9.2 Meter(31 ft)</td>
+                        <td>10.4 Meter(36 ft)</td>
                     </tr>
                     <tr>
                         <th>넓이</th>
-                        <td>3.23 Meter</td>
+                        <td>3.1 Meter</td>
                     </tr>
                     <tr>
-                        <th>회원수</th>
-                        <td>250명~</td>
+                        <th>엔진</th>
+                        <td>야마하 28/25</td>
+                    </tr>
+                    <tr>
+                        <th>정원</th>
+                        <td>12명</td>
                     </tr>
                 </table>
                 <br>
@@ -248,7 +296,36 @@
         
     </footer>
 
-    <script src="../js/booking.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mSwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        on: {
+            autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+        }
+        });
+    </script>
 
 </body>
 </html>

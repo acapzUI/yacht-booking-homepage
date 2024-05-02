@@ -27,13 +27,13 @@ body {
 }
 
 
-.service_container_4 {
+.service_container_5 {
     margin-top: 10px;
-    width: 1200px;
+    width: 1500px;
     height: 300px;
     display: grid;
     grid-template-rows: 300px;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: 300px 300px 300px 300px 300px;
     grid-auto-rows: 300px;
     gap: 20px;
 }
